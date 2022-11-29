@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "move",
+  "version": "${version}",
+  "name": "Move",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/move/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "paulfrische.xyz.move.client.MoveClient"
+    ],
+    "main": [
+      "paulfrische.xyz.move.Move"
+    ]
+  },
+  "mixins": [
+    "move.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
